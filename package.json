@@ -48,7 +48,8 @@
       "npm run fix:json"
     ],
     "./content/**/**/*.md": [
-      "npm run fix:content"
+      "npx prettier --write  --embedded-language-formatting off",
+      "npx remark"
     ],
     "./assets/js/*.{js,ts}": [
       "npm run fix:scripts",
